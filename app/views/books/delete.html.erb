@@ -1,5 +1,8 @@
 <p id="notice"><%= notice %></p>
 
+<h1> Are you sure you want to delete?</h1>
+
+
 <p>
   <strong>Title:</strong>
   <%= @book.title %>
@@ -20,5 +23,5 @@
   <%= @book.date %>
 </p>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Yes', @book, method: :delete %></td> |
 <%= link_to 'Back', books_path %>

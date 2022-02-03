@@ -32,9 +32,4 @@ RSpec.describe Book, type: :model do
     subject.date = nil
     expect(subject).not_to be_valid
   end
-
-  it 'is valid after all tests' do
-    subject.date = "1/1/2001"
-    expect(subject).to be_valid
-  end
 end

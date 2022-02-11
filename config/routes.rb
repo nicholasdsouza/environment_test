@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :students
+  resources :users
+  root 'students#index'
   resources :books do
     member do
       get :delete
